@@ -1,10 +1,19 @@
-# Admin Scanner Ethical - V3 Threaded
 
-Scanner educacional Red Team / Blue Team
+cat > README.md << 'EOF'
+# 🛡️ Admin Finder - V3 Threaded
 
-Testado em demo.testfire.net - 11 rotas encontradas
+Scanner educacional para encontrar painéis administrativos expostos. Para estudos Red Team com autorização.
 
-Uso: python scan.py http://alvo-autorizado
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Purpose](https://img.shields.io/badge/Purpose-Educational-green)
 
-Apenas para fins educacionais e auditorias com permissão.
-Feito em Recife - PE
+### Resultado Real
+Testado em `http://demo.testfire.net` (site vulnerável da IBM) - 11 rotas encontradas:
+- /admin [200]
+- /admin/login [200]
+- /administrator [302]
+
+### Como usar (apenas com autorização)
+```bash
+pip install requests
+python scan.py http://seu-alvo-autorizado.com
