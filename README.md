@@ -16,4 +16,4 @@ Testado em `http://demo.testfire.net` (site vulnerável da IBM) - 11 rotas encon
 ### Como usar (apenas com autorização)
 ```bash
 pip install requests
-python scan.py http://seu-alvo-autorizado.com
+python admin_finder.py http://seu-alvo-autorizado.com
